@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  /* contain : style layout inline-size; */
+  p{
+    color: gray;
+  }
+}
+
+.rotate {
+ transform: rotate(180deg);
+}
