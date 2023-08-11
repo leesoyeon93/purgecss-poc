@@ -5,6 +5,8 @@ module.exports = {
     require('cssnano')({
       preset: 'default',
     }),
+    // autoprefix
+    require('autoprefixer')
   ]
 };
 

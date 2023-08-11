@@ -3,6 +3,7 @@
   /* contain : style layout inline-size; */
   p{
     color: gray;
+    display : block;
   }
 }
 
