@@ -59,8 +59,7 @@
     "start": "craco start",
     "test": "craco test",
     "build": "craco build",
-    "build:autoprefix": "npx postcss ./src/styles/css/index.module.css --use autoprefixer -o ./src/styles/output/index.css -w",
-    "postbuild": "npx purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css" 
+    "build:autoprefix": "npx postcss ./src/styles/css/index.module.css --use autoprefixer -o ./src/styles/output/index.css -w"
   },
   "eslintConfig": {
     "extends": [
@@ -82,3 +81,6 @@
   },
   "description": "My webpack project"
 }
+
+
+

@@ -1,10 +1,10 @@
 .App {
   text-align: center;
   /* contain : style layout inline-size; */
-  p{
-    color: gray;
-    display : block;
-  }
+}
+
+.gray{
+  color : gray;
 }
 
 .rotate {

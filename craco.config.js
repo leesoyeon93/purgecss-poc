@@ -7,7 +7,7 @@ module.exports = {
           overrideWebpackConfig: ({ webpackConfig }) => {
             webpackConfig.resolve.plugins.push(new TsconfigPathsPlugin({}));
             return webpackConfig;
-          }
+          },
         },
         options: {
             source: 'tsconfig',

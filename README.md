@@ -1,46 +1,51 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react 로 프로젝트 생성
+https://create-react-app.dev/docs/adding-typescript/
+```
+npx create-react-app my-app --template typescript
+```
 
-## Available Scripts
+# craco란 ? 
+https://craco.js.org/
 
-In the project directory, you can run:
+https://abangpa1ace.tistory.com/entry/Craco-CracoCreate-React-App-Configuration-Override-%EB%9E%80
 
-### `npm start`
+여러 설정 파일 모음
+https://github.com/dilanx/craco
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## craco + type alias
+https://leego.tistory.com/entry/React-CRA%EC%97%90%EC%84%9C-Path-alias-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# webpack cli 설치 
+https://webpack.kr/guides/getting-started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+yarn add -D webpack webpack-cli
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## webpack 초기화
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://webpack.kr/api/cli/
 
-### `npm run eject`
+```
+npx webpack init 
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+여러 옵션 선택 ㄱㄱ 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# purgecss 
+https://purgecss.com/getting-started.html
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## purgecss + webpack 
+https://purgecss.com/plugins/webpack.html
 
-## Learn More
+### package.json
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+"postbuild": "npx purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css" 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
