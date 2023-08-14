@@ -1,3 +1,4 @@
+import '@styles/output/index.css';
 import Toggle from './components/a/b/c/d/e/Toggle';
 
 function App() {
